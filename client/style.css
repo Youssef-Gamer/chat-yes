@@ -1,0 +1,66 @@
+html {
+    color-scheme: dark;
+}
+body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-family: system-ui;
+    margin: 12px;
+}
+* {
+    color: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+#message-list {
+    display: grid;
+    gap: 12px;
+}
+.message {
+    display: flex;
+    gap: 12px;
+}
+.sender {
+    margin: 0;
+}
+.pfp {
+    width: 48px;
+    height: 48px;
+    border-radius: 100vmax;
+}
+#message-form {
+    position: fixed;
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#message-box {
+    outline: none;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 1.25rem;
+    width: 100%;
+    transition: border-color 0.1s ease-in-out;
+}
+#send-button {
+    outline: none;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    font-weight: bold;
+    padding-inline: 12px;
+    transition: 0.1s ease-in-out;
+    transition-property: border-color, background-color;
+}
+#message-box:focus, #send-button:focus {
+    border-color: #4493f8;
+    
+}
+#send-button:hover {
+    background-color: #30363d;
+}
